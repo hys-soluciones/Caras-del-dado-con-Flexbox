@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+/* *************************************** */
+.dado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+[class^="cara-"] {
+  background-color: #333;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+}
+.cara-uno {
+  justify-content: center;
+  align-items: center;
+}
+.cara-dos {
+  justify-content: space-between;
+}
+.cara-dos .punto:nth-child(2) {
+  align-self: flex-end;
+}
+.cara-tres {
+  justify-content: space-between;
+}
+.cara-tres .punto:nth-child(2) {
+  align-self: center;
+}
+.cara-tres .punto:nth-child(3) {
+  align-self: flex-end;
+}
+.cara-cuatro {
+  justify-content: space-between;
+}
+.cara-cuatro .columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cara-cinco {
+  justify-content: space-between;
+}
+.cara-cinco .columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cara-cinco .punto:nth-child(2) {
+  align-self: center;
+}
+.cara-seis {
+  justify-content: space-between;
+}
+.cara-seis .columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.punto {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+/* *************************************** */
+footer {
+  text-align: center;
+  color: #ccc;
+  padding-top: 3em;
+}
